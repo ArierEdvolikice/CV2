@@ -1,1 +1,1 @@
-# https://arieredvolikice.github.io/onpage.html
+# https://arieredvolikice.github.io/CV2/onepage.html
