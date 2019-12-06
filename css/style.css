@@ -628,6 +628,7 @@ label > p {
   display: grid;
   width: 270px;
   box-shadow: 3px 3px 3px #67c2d0;
+  border-radius: 40px;
 }
 
 .grid-item > img {
@@ -645,10 +646,12 @@ label > p {
 
 #mulher > img {
     float: left;
-    width: 18%;
+    width: 19%;
     height: 100%;
     margin: 0 auto;
-    opacity: 1;1;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #texto-ex {
