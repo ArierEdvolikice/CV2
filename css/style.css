@@ -122,9 +122,17 @@ html {
 
  #resultado {
 
-    background-color: blue;
+    background-color: #f6f6f6;
     width: 100%;
     height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    opacity: 1;
+    border-radius: 15px;
+    font-size: 40px;
 
  }
 
@@ -150,8 +158,11 @@ input[type=number]{
     height: 100%;
     border:none;
     text-align: center;
-    font-family: 'Quicksand-Light';
+    font-family: 'Quicksand-SemiBold';
+    opacity: 1;
     font-size: 30px;
+    border-radius: 15px;
+    color: #ff8246;
 }
 
 input::-webkit-outer-spin-button,
@@ -169,28 +180,35 @@ input[type=number] {
 
   opacity: 1;
   text-align: center;
-  font-size: 20px;
-  font-family: 'ComingSoon-Regular'
+  font-size: 30px;
+  font-family: 'Quicksand-SemiBold';
+  margin-top:0;
+  color: #BEEEF7;
 
 }
 
 :-ms-input-placeholder {
 
- color: red;
+ color: #ff8246;
 
 }
 
 ::-ms-input-placeholder {
 
- color: red;
+ color: #ff8246;
 
 }
 
 #msg_top {
 
   width: 100%;
-  height: 100%;
-  background: red;
+  height: 98%;
+  background:;
+  margin: 0;
+  border-radius: 15px;
+  color: #f6f6f6;
+  text-align: justify;
+  text-indent:2em;
 
 }
 
@@ -376,6 +394,7 @@ input[type=number] {
   display: inline-flex;
   width: 100%;
   height: 100%;
+  margin-top: 5%;
 }
 
 #container_up {
@@ -407,7 +426,7 @@ input[type=number] {
 #tela_02 > img {
   position: absolute;
   width: 100%;
-  height: 18%;
+  height: 140px;
 }
 
 div > img {
@@ -417,6 +436,15 @@ div > img {
   margin: 0 auto;
   opacity: 0.8;
 }
+
+#tela_03 {
+  background: url(../img/imagem.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
 
 #imagem-op > img {
 	padding: 5px;
@@ -434,7 +462,7 @@ div > img {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 57%;
+  height: 62%;
   padding: 10px;
 }
 
@@ -455,6 +483,8 @@ div > img {
   flex: 1;
   padding: 10px;
   background-color:#67c2d0;
+  border-radius: 15px;
+  height: 100%;
 }
 
 .column_2 {
@@ -465,6 +495,8 @@ div > img {
   flex: 1;
   padding: 10px;
   background-color:#ff8246;
+  border-radius: 15px;
+  height: 100%;
 
 }
 
@@ -507,19 +539,25 @@ div > img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 93%;
+  height: 85%;
   width: 100%;
-  background-color: #eee;
+  background-color: #beeef7;
+  opacity: .7;
+  transition: .5s;
+  border-radius: 15px;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #FF8246;
+  color: #F6F6F6;
+  opacity: 1;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+    background-color: #373a60;
+    opacity: .6;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -536,15 +574,16 @@ div > img {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 40%;
-    top: 0%;
-    width: 76px;
-    height: 60px;
+    left: 8%;
+    top: 5%;
+    width: 50px;
+    height: 30px;
     border: solid white;
-    border-width: 0 6px 10px 0;
+    border-width: 0 6px 9px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
 }
 
 #div_input {
@@ -564,9 +603,10 @@ div > img {
 label > p {
 
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #F6F6F6;
 
 }
 
@@ -612,7 +652,33 @@ label > p {
 }
 
 #texto-ex {
-  border: 3px solid #373a6d;
+    border: 3px solid #67c2d0;
+    height: 65%;
+    font-family: 'Quicksand-Light';
+    width: 28%;
+    margin: 10px 10px 0px auto;
+    border-radius: 30px;
+}
+
+footer > img {
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#logo {
+  margin: 0 auto;
+    display: table;
+    position: relative;
+}
+
+#logo > img {
+  width: 100%;
   height: 100%;
-  font-family: 'Quicksand-Light';
+}
+
+#tela_final h1 {
+  font-size: 200px;
+  margin-top: 70px;
 }
